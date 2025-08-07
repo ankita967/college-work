@@ -1,0 +1,85 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN5vMLztFhFZfiKD9UMLkCM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ankita967/college-work/blob/main/basic%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_ipCo81jue7-",
+        "outputId": "c310fbba-4900-4306-80ff-6284cb2cda7a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first  number=12\n",
+            "Enter the second  number=23\n",
+            "Enter the third  number=32\n",
+            "32 is the largest number\n",
+            "23 is the second largest number\n",
+            "12 is the smallest number\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Find the largest , second largest and the smallest number\n",
+        "\n",
+        "a=int(input(\"Enter the first  number=\"))\n",
+        "b=int(input(\"Enter the second  number=\"))\n",
+        "c=int(input(\"Enter the third  number=\"))\n",
+        "\n",
+        "if a>b and a>c:\n",
+        "  print(a,\"is the largest number\")\n",
+        "elif b>c and b>a:\n",
+        "  print(b,\"is the largest number\")\n",
+        "else:\n",
+        "  print(c,\"is the largest number\")\n",
+        "\n",
+        "\n",
+        "if a>b and a<c or a<b and a>c:\n",
+        "  print(a,\"is the second largest number\")\n",
+        "elif b>a and b<c or b<a and b>c:\n",
+        "  print(b,\"is the second largest number\")\n",
+        "else:\n",
+        "  print(c,\"is the second largest number\")\n",
+        "\n",
+        "\n",
+        "if a<b and a<c:\n",
+        "  print(a,\"is the smallest number\")\n",
+        "elif b<a and b<c:\n",
+        "  print(b,\"is the smallest number\")\n",
+        "else:\n",
+        "  print(c,\"is the smallest number\")"
+      ]
+    }
+  ]
+}
